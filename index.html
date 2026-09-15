@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>个人简历 - 你的姓名</title>
+  <style>
+    :root{--bg:#f7f8fb;--card:#fff;--accent:#1f6feb;--muted:#6b7280}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:var(--bg); color:#111;margin:0;padding:24px}
+    .container{max-width:900px;margin:20px auto}
+    .card{background:var(--card);border-radius:10px;box-shadow:0 6px 18px rgba(20,20,30,0.06);padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .title{line-height:1}
+    h1{margin:0;font-size:24px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .meta{text-align:right;color:var(--muted);font-size:14px}
+    .section{margin-top:20px}
+    h2{font-size:16px;margin:0 0 10px}
+    ul{padding-left:18px;margin:0}
+    li{margin:8px 0}
+    .cols{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .sidebar{background:linear-gradient(180deg,#fafcff,#fff);padding:16px;border-radius:8px}
+    .chip{display:inline-block;background:#eef6ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px;margin-right:6px}
+    .muted{color:var(--muted)}
+    .tiny{font-size:13px}
+    .download{display:inline-block;margin-top:10px;padding:8px 12px;background:var(--accent);color:white;border-radius:6px;text-decoration:none}
+    @media(max-width:880px){.cols{grid-template-columns:1fr} .meta{text-align:left;margin-top:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="title">
+          <h1>你的姓名</h1>
+          <p class="lead">求职目标：软件工程 / 后端开发 / 数据分析（可替换为你目标岗位）</p>
+        </div>
+        <div class="meta">
+          <div>城市 · 可立即入职</div>
+          <div class="muted tiny">邮箱：your.email@example.com  · 电话：+86 138 0000 0000</div>
+        </div>
+      </header>
+
+      <div class="section">
+        <h2>个人简介</h2>
+        <p class="muted tiny">（一句话突出应届生优势：学习快、执行力强、岗位适配性高、踏实肯干、可塑性强）</p>
+        <p>
+          应届毕业生，专业为计算机科学/相关专业。学习能力强，能在短时间内掌握新技术与工具；执行力高，注重效率与质量；对职位要求高度适配，踏实肯干、团队协作佳、可塑性强。具备扎实的专业基础与实操经验，期望在互联网/数据/金融等方向担任初级工程师/实习转正岗位。
+        </p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <div class="section">
+            <h2>教育背景</h2>
+            <p class="tiny muted">学校名称 · 本科 · 专业（毕业年份）</p>
+            <ul>
+              <li>主修课程：数据结构、操作系统、数据库、计算机网络、机器学习</li>
+              <li>成绩/排名：平均绩点 3.7/4.0（或班级前10%）</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>实习经历</h2>
+            <p class="tiny muted">（用动词开头，量化成果，突出实操能力与岗位适配）</p>
+
+            <h3 class="tiny">实习生 — XX 公司 / 后端开发（20XX.06 — 20XX.09）</h3>
+            <ul>
+              <li>参与公司订单系统后端模块开发，使用 Java + Spring Boot，完成 3 个核心接口的设计与实现，响应时间平均降低 25%。</li>
+              <li>编写并维护单元测试与集成测试，覆盖率提升至 68%，减少线上缺陷回归次数。</li>
+              <li>优化数据库查询，使用索引与批量处理将关键查询耗时从 1.2s 降至 200ms，日均查询量 5k+</li>
+            </ul>
+
+            <h3 class="tiny">助理研发实习生 — YY 科技 / 数据工程（20XX.07 — 20XX.09）</h3>
+            <ul>
+              <li>搭建 ETL 数据流水线（Python + Airflow），将数据处理延迟从 6h 缩短至 1.5h，支持日活数据报表准时输出。</li>
+              <li>负责数据清洗脚本开发，降低脏数据比例 40%，并撰写处理文档供团队复用。</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>项目经历</h2>
+            <ul>
+              <li>校园招聘系统（团队项目，4 人）：负责后端接口与数据库设计，完成用户注册、职位管理与投递统计模块，使用 MySQL 和 RESTful API。</li>
+              <li>可视化分析仪表盘：使用 Python + ECharts 实现前端图表展示，帮助导师快速查看实验数据趋势，提升决策效率。</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>其他技能</h2>
+            <ul>
+              <li>编程：Java、Python、SQL、JavaScript</li>
+              <li>框架/工具：Spring Boot、Django、Flask、Git、Docker、Airflow</li>
+              <li>数据库：MySQL、PostgreSQL、Redis</li>
+              <li>语言：中文（母语）、英语（CET-4/6 或可替换）</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div>
+            <span class="chip">可塑性强</span>
+            <span class="chip">执行力高</span>
+            <span class="chip">学习力强</span>
+          </div>
+
+          <div class="section">
+            <h2>校园经历</h2>
+            <ul>
+              <li>担任学生会项目负责人：组织 5 次校内活动，协调 20+ 同学，活动参与人数累计 800+，提升团队沟通与统筹能力。</li>
+              <li>参加 ACM 学术团队：负责题目拆解与解法实现，提升问题分析与协作能力。</li>
+              <li>志愿者经历：参与新生接待与宣讲，提高表达与沟通能力。</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>求职意向与备注</h2>
+            <p class="tiny muted">期望岗位：后端开发 / 算法工程师 / 数据工程师。可接受城市：北京 上海 深圳。可试用/实习转正。</p>
+
+            <a class="download" href="#" onclick="alert('请替换为你的简历 PDF 链接或将 resume.pdf 放到仓库后更新此链接')">下载 PDF 简历</a>
+          </div>
+
+          <div class="section">
+            <h2>联系方式</h2>
+            <p class="tiny">邮箱：your.email@example.com<br/>电话：+86 138 0000 0000<br/>GitHub：github.com/你的账号</p>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+
+    <p class="muted tiny" style="text-align:center;margin-top:14px">说明：将页面中“你的姓名”“联系方式”“实习/项目细节”替换为真实信息，保持内容真实、简洁、可量化，适配校招投递需求。</p>
+  </div>
+</body>
+</html>
